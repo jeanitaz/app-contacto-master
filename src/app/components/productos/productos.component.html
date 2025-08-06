@@ -1,0 +1,49 @@
+<section class="p-3 sm:p-5 productos-container">
+    <div class="mx-auto max-w-screen-xl px-4 lg:px-12">
+
+        <div class="bg-white dark:bg-gray-800 relative shadow-md sm:rounded-lg overflow-hidden productos-card">
+            <div class="overflow-x-auto">
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400 productos-table">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                            <th scope="col" class="px-4 py-3">Nombre</th>
+                            <th scope="col" class="px-4 py-3">Imagen</th>
+                            <th scope="col" class="px-4 py-3">Descripción</th>
+                            <th scope="col" class="px-4 py-3">
+                                <span class="sr-only">Actions</span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for(productos of Productos; track productos.id){
+                        <tr class="border-b dark:border-gray-700">
+                            <td class="px-4 py-3">{{productos.nombre}}</td>
+                            <td class="px-4 py-3">
+                                <img [src]="productos.imagen" alt="{{productos.nombre}}" class="productos-img" />
+                            </td>
+                            <td class="px-4 py-3 descripcion">{{productos.descripcion}}</td>
+                            <td class="px-4 py-3 flex items-center justify-end">
+                                <div id="apple-imac-27-dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600">
+                                    <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="apple-imac-27-dropdown-button">
+                                        <li>
+                                            <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Show</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Edit</a>
+                                        </li>
+                                    </ul>
+                                    <div class="py-1">
+                                        <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Delete</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>}
+                        </tbody>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+    </section>
+
+

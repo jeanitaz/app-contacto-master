@@ -1,0 +1,110 @@
+.nosotros-container {
+  background-image: url('https://media.boingboing.net/wp-content/uploads/2015/09/coffee_in_rain_by_kirokaze-d98qb8z.gif');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+  position: relative;
+  overflow-x: hidden;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.nosotros-container::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(120deg, rgba(0,255,255,0.08) 0%, rgba(0,0,0,0.7) 100%);
+  z-index: 0;
+}
+
+.nosotros-card {
+  position: relative;
+  z-index: 1;
+  background: rgba(20, 30, 48, 0.82);
+  border-radius: 22px;
+  box-shadow: 0 8px 32px 0 #00fff7a0, 0 1.5px 8px #00e5ff33;
+  padding: 2.5rem 2rem 2rem 2rem;
+  margin-bottom: 2.2rem;
+  max-width: 1080px;
+  backdrop-filter: blur(10px) saturate(120%);
+  border: 2px solid #00fff7;
+  transition: transform 0.22s, box-shadow 0.22s;
+  text-align: center;
+}
+.nosotros-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 16px 48px 0 #00fff7cc;
+}
+.nosotros-card h1 {
+  font-size: 2.3rem;
+  font-weight: 900;
+  margin-bottom: 1.2rem;
+  letter-spacing: 2px;
+  color: #00fff7;
+  text-shadow: 0 0 16px #00fff7, 0 1px 0 #fff;
+  font-family: 'Orbitron', 'Segoe UI', Arial, sans-serif;
+}
+.nosotros-card p {
+  font-size: 1.13rem;
+  color: #e0f7fa;
+  margin-bottom: 0.7rem;
+  text-shadow: 0 1px 8px #000;
+}
+.brand {
+  color: #00fff7;
+  font-weight: bold;
+  text-shadow: 0 0 8px #00fff7;
+}
+.nosotros-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.2rem 0 1.5rem 0;
+}
+.nosotros-list li {
+  background: rgba(0,255,255,0.08);
+  border: 1.5px solid #00fff7;
+  border-radius: 16px;
+  padding: 0.7rem 1.2rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.05rem;
+  box-shadow: 0 2px 12px #00fff733;
+  margin-bottom: 0.7rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  transition: background 0.2s, transform 0.2s;
+}
+.nosotros-list li:hover {
+  background: rgba(0,255,255,0.18);
+  transform: scale(1.04);
+}
+.nosotros-img-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.nosotros-img {
+  width: 180px;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px #00fff7a0;
+  border: 2px solid #00fff7;
+  background: #181c2f;
+}
+
+@media (max-width: 900px) {
+  .nosotros-card {
+    max-width: 98vw;
+    padding: 1.2rem 0.5rem;
+  }
+  .nosotros-img {
+    width: 120px;
+  }
+}

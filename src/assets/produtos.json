@@ -1,0 +1,32 @@
+[
+    {
+    "id": 1,
+    "nombre": "IPhone 16 Pro Max",
+    "imagen": "https://i.postimg.cc/zXVvVW58/Apple-i-Phone-16-Pro-hero-geo-240909-lp-jpg-og-removebg-preview.png",
+    "descripcion": "El último buque insignia de Apple con un diseño refinado, chip A18 Pro, cámara de nivel profesional y pantalla OLED ultra fluida. Potencia, eficiencia y estilo en un solo dispositivo."
+    },
+    {
+    "id": 2,
+    "nombre": "RedMagic 10 Pro",
+    "imagen": "https://i.postimg.cc/8PM5RGF0/download-removebg-preview.png",
+    "descripcion": "Smartphone gamer con rendimiento extremo gracias a su procesador Snapdragon de última generación, refrigeración activa y pantalla de alta tasa de refresco. Ideal para juegos intensos."
+    },
+    {
+    "id": 3,
+    "nombre": "One Plus 10 Pro",
+    "imagen": "https://i.postimg.cc/0NBPgXMS/download-removebg-preview-1.png",
+    "descripcion": "Teléfono de alto rendimiento con una experiencia fluida, cámaras Hasselblad y carga ultrarrápida. Elegante, potente y pensado para usuarios exigentes."
+    },
+    {
+    "id": 4,
+    "nombre": "Asus Rog AllY",
+    "imagen": "https://i.postimg.cc/020v5yKP/download-removebg-preview-2.png",
+    "descripcion": "Consola portátil con Windows, ideal para jugar títulos AAA en cualquier lugar. Cuenta con gráficos potentes y una pantalla táctil de alta resolución. Tu PC gamer... en tus manos."
+    },
+    {
+    "id": 5,
+    "nombre": "Asus Rog Strix g16",
+    "imagen": "https://i.postimg.cc/NF830dMp/download-removebg-preview-3.png",
+    "descripcion": "Laptop gamer con hardware de última generación, pantalla de 165Hz y sistema de refrigeración inteligente. Perfecta para gamers y creadores de contenido que exigen alto rendimiento."
+    }
+]

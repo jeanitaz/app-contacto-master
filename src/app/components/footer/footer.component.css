@@ -1,0 +1,28 @@
+footer {
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  background: rgba(0, 255, 247, 0.15); /* #00fff7 with transparency */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border-radius: 24px 24px 0 0;
+  border-top: 1px solid rgba(0, 255, 247, 0.18);
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  transition: background 0.4s, box-shadow 0.4s;
+}
+
+footer a, footer span, footer p {
+  color: #fff !important;
+  text-shadow: 0 0 8px #00fff7, 0 0 2px #fff;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+footer a:hover {
+  color: #00fff7 !important;
+  text-shadow: 0 0 12px #00fff7, 0 0 4px #fff;
+}
