@@ -7,8 +7,8 @@ import { autenticaGuard } from './guards/autentica.guard';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'nosotros', component: NosotrosComponent, canActivate:[autenticaGuard]},
-  { path: 'productos', component: ProductosComponent, },
+  { path: 'nosotros', component: NosotrosComponent},
+  { path: 'productos', component: ProductosComponent, canActivate:[autenticaGuard]},
   { path: 'login', component: LoginComponent },
   { path: '**', redirectTo: '' }
 ];
