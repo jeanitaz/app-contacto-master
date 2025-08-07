@@ -1,4 +1,9 @@
-[
+{
+    "usuario":[
+    { "id": 1, "username": "admin", "password": "admin123" },
+    { "id": 2, "username": "user", "password": "user123" }
+    ],
+    "productos":[
     {
     "id": 1,
     "nombre": "IPhone 16 Pro Max",
@@ -30,3 +35,4 @@
     "descripcion": "Laptop gamer con hardware de última generación, pantalla de 165Hz y sistema de refrigeración inteligente. Perfecta para gamers y creadores de contenido que exigen alto rendimiento."
     }
 ]
+}
