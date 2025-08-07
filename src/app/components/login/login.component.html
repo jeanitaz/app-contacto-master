@@ -1,4 +1,5 @@
 <div class="body">
+    <form (ngSubmit)="login()" action="">
     <div class="login-container">
         <div class="login-card">
             <div class="login-title">
@@ -7,13 +8,14 @@
             <div class="login-form">
                 <p><strong>Ingresa tus Credenciales</strong></p>
                 <div class="input-group">
-                    <input required="" placeholder="Usuario" class="login-input" type="text" />
+                    <input [(ngModel)]="usuario" required="" placeholder="Usuario" class="login-input" type="text" />
                 </div>
                 <div class="input-group">
-                    <input required="" placeholder="Contraseña" class="login-input" type="password" />
+                    <input [(ngModel)]="password" required="" placeholder="Contraseña" class="login-input" type="password" />
                 </div>
                 <button class="login-btn" type="submit">Ingresar</button>
             </div>
         </div>
     </div>
+    </form>
 </div>

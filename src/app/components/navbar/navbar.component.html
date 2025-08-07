@@ -33,9 +33,15 @@
                             class="flex items-center justify-between text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-700 transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3">Productos</a>
                     </li>
                     <li>
+                        @if(!authServicio.sesionIniciada()){
                         <a routerLink="/login"
                             class="flex items-center justify-between text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-700 transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3">Inicio
                             de Sesion</a>
+                        }
+                    </li>
+                    <li (click)="logout()">
+                        <a routerLink="/productos"
+                            class="flex items-center justify-between text-gray-500 text-sm lg:text-base font-medium hover:text-indigo-700 transition-all duration-500 mb-2 lg:mr-6 md:mb-0 md:mr-3">Cerrar Sesion</a>
                     </li>
                 </ul>
             </div>

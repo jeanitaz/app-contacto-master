@@ -4,19 +4,28 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({ providedIn: 'root' })
 export class AuthService {
   private apiUrl = 'http://localhost:3000/users';
-  private loggedIn = false;
 
-  constructor(private http: HttpClient) {}
+ 
 
-  login(username: string, password: string) {
-    return this.http.get<any[]>(`${this.apiUrl}?username=${username}&password=${password}`);
+  constructor() { }
+
+  private UsuarioValido={
+  usuario:'admin',
+  password:'admin1234',
   }
 
-  setLoggedIn(value: boolean) {
-    this.loggedIn = value;
+  login=(usuario:string, password:string)=>{
+    if(usuario==this.UsuarioValido.usuario && password==this.UsuarioValido.password){
+      localStorage.setItem('user', usuario)
+      return true;
+    }
+      return false;
+  }
+  sesionIniciada = ()=>{
+    return localStorage.getItem('user') !=null;
   }
 
-  isLoggedIn() {
-    return this.loggedIn;
+  logout=()=>{
+    localStorage.removeItem('user');
   }
 }
